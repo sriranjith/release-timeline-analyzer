@@ -15,7 +15,7 @@ public class ReleaseTimelineAnalyzerApplication extends Application<Configuratio
 
 
     public static void main(String[] args) throws Exception {
-        //new ReleaseTimelineAnalyzerApplication().run(args);
-        System.out.println(new ReleaseResource().getRelease("1"));
+        new ReleaseTimelineAnalyzerApplication().run(args);
+        //System.out.println(new ReleaseResource().getRelease("1"));
     }
 }

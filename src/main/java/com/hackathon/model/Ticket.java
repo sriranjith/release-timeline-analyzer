@@ -18,6 +18,5 @@ public class Ticket {
     List<Ticket> subTask = new ArrayList<>();
     int sla;
     LocalDate createdDate;
-    Status visitedStatus;
     //String status;
 }

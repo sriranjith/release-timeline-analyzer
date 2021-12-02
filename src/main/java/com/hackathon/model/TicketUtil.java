@@ -12,11 +12,11 @@ public class TicketUtil {
 
     public static Ticket populateTicketInfo(String ticketId) {
         // Actual jira API call and JSON parsing.
-        Ticket t3 = new Ticket("3", Arrays.asList(), Arrays.asList(), 1, LocalDate.now(), Status.NONE);
-        Ticket t4 = new Ticket("4", Arrays.asList(), Arrays.asList(), 1, LocalDate.now(), Status.NONE);
-        Ticket t5 = new Ticket("5", Arrays.asList(), Arrays.asList(), 5, LocalDate.now(), Status.NONE);
-        Ticket t2 = new Ticket("2", Arrays.asList(t5), Arrays.asList(), 3, LocalDate.now(), Status.NONE);
-        Ticket t1 = new Ticket("1", Arrays.asList(), Arrays.asList(t5), 2, LocalDate.now(), Status.NONE);
+        Ticket t3 = new Ticket("3", Arrays.asList(), Arrays.asList(), 1, LocalDate.now());
+        Ticket t4 = new Ticket("4", Arrays.asList(), Arrays.asList(), 1, LocalDate.now());
+        Ticket t5 = new Ticket("5", Arrays.asList(), Arrays.asList(), 5, LocalDate.now());
+        Ticket t2 = new Ticket("2", Arrays.asList(t5), Arrays.asList(), 3, LocalDate.now());
+        Ticket t1 = new Ticket("1", Arrays.asList(), Arrays.asList(t5), 2, LocalDate.now());
         map.put("1", t1);
         map.put("2", t2);
         map.put("3", t3);

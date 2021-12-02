@@ -1,18 +1,16 @@
 package com.hackathon.model;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.List;
+import java.time.LocalDate;
 
-@Data
 @Builder
-public class Release {
+@Data
+public class Timeline {
     @JsonProperty
-    TicketRelease ticketRelease;
-
+    String name;
     @JsonProperty
-    List<Timeline> timelineList;
+    LocalDate date;
 }

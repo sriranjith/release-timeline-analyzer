@@ -3,6 +3,7 @@ package com.hackathon.model;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -44,5 +45,19 @@ public class TicketUtil {
                     break;
             }
         }
+    }
+
+    private static Map<String, Integer> timelineMap = new LinkedHashMap<>();
+
+    static {
+        timelineMap.put("soft", 0);
+        timelineMap.put("hardcode", 5);
+        timelineMap.put("TEST", 10);
+        timelineMap.put("Prod", 10);
+        timelineMap.put("GA", 1);
+    }
+
+    public static Map<String, Integer> getTimeline() {
+        return timelineMap;
     }
 }
